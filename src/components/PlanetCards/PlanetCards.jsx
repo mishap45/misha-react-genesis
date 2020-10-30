@@ -10,6 +10,7 @@ const PlanetCards = () => {
     return (
         <div className={style.cardsContainer}>
             <Container>
+                <Row><p className={style.headPlanetCards}>Star Wars Planets Encyclopedia</p></Row>
                 <Row>
                     <CardPlanet/>
                     <CardPlanet/>

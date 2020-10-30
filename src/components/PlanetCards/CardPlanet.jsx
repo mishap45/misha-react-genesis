@@ -12,7 +12,7 @@ const CardPlanet = () => {
         <Card className={style.card} bg={'dark'} text={'light'}>
             <Card.Img className={style.img} variant="top" src={planet} />
             <Card.Body>
-                <Card.Title>Planet name</Card.Title>
+                <Card.Title  className={style.title}>Planet name</Card.Title>
             </Card.Body>
             <ListGroup className="list-group-flush" text={'light'}>
                 <ListGroupItem variant={'dark'}>Climate: good</ListGroupItem>
