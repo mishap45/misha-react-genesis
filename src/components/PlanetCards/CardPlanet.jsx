@@ -4,10 +4,14 @@ import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
 import ListGroupItem from 'react-bootstrap/ListGroupItem'
 import planet from '../../assets/icons/icons8-earth-planet-100.png'
+import { Link } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.css'
 
-const CardPlanet = ({ climate, name, population }) => {
+const CardPlanet = ({ climate, name, population, url }) => {
+
+    const newUrl = url.split('/');
+
     return (
         <Card className={style.card} bg={'dark'} text={'light'}>
             <Card.Img style={{ width: 100, margin: '0 auto', paddingTop: '5%' }} variant="top" src={planet} />
@@ -19,7 +23,7 @@ const CardPlanet = ({ climate, name, population }) => {
                 <ListGroupItem variant={'dark'}>Population: {population === 'unknown' ? '0' : population} residents</ListGroupItem>
             </ListGroup>
             <Card.Body>
-                <Card.Link href="#">Details</Card.Link>
+                <Link to={`/planet/${newUrl[5]}`}>Details</Link>
             </Card.Body>
         </Card>
     )

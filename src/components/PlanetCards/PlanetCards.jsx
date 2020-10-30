@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const PlanetCards = ({ planets }) => {
 
-    let cardsPlanets = planets.map( p => <CardPlanet key={p.name} name={p.name}
+    let cardsPlanets = planets.map( p => <CardPlanet key={p.name} name={p.name} url={p.url}
                                                      climate={p.climate} population={p.population} /> );
 
     return (
