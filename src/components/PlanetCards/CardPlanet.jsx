@@ -7,16 +7,16 @@ import planet from '../../assets/icons/icons8-earth-planet-100.png'
 
 import 'bootstrap/dist/css/bootstrap.css'
 
-const CardPlanet = () => {
+const CardPlanet = ({ climate, name, population }) => {
     return (
         <Card className={style.card} bg={'dark'} text={'light'}>
-            <Card.Img className={style.img} variant="top" src={planet} />
+            <Card.Img style={{ width: 100, margin: '0 auto', paddingTop: '5%' }} variant="top" src={planet} />
             <Card.Body>
-                <Card.Title  className={style.title}>Planet name</Card.Title>
+                <Card.Title  className={style.title}>{name}</Card.Title>
             </Card.Body>
             <ListGroup className="list-group-flush" text={'light'}>
-                <ListGroupItem variant={'dark'}>Climate: good</ListGroupItem>
-                <ListGroupItem variant={'dark'}>Population: 5000 people</ListGroupItem>
+                <ListGroupItem variant={'dark'}>Climate: {climate}</ListGroupItem>
+                <ListGroupItem variant={'dark'}>Population: {population === 'unknown' ? '0' : population} residents</ListGroupItem>
             </ListGroup>
             <Card.Body>
                 <Card.Link href="#">Details</Card.Link>
