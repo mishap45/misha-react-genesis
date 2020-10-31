@@ -10,7 +10,7 @@ const PlanetCards_Container = () => {
         const res = await axios.get('https://swapi.dev/api/planets/');
         const data = await res.data.results;
         setPlanets(data)
-    }, []);
+    }, [planets]);
 
     return <PlanetCards planets={planets} />
 };

@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './header.module.css'
 import logoPhoto from '../../assets/img/star-wars-logo-wallpaper.jpg'
-import downArrow from '../../assets/icons/icons8-expand-arrow-100.png'
+import downArrow from '../../assets/icons/expand-arrow-100.png'
 
 const Header = () => {
     return (

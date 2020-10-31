@@ -1,9 +1,9 @@
 import React from 'react'
-import style from './planetCards.module.css'
+import style from '../planetCards.module.css'
 import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
 import ListGroupItem from 'react-bootstrap/ListGroupItem'
-import planet from '../../assets/icons/icons8-earth-planet-100.png'
+import planet from '../../../assets/icons/planet-100.png'
 import { Link } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.css'

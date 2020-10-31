@@ -2,7 +2,7 @@ import React from 'react'
 import style from './planetCards.module.css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import CardPlanet from './CardPlanet'
+import CardPlanet from './CardPlanet/CardPlanet'
 
 import 'bootstrap/dist/css/bootstrap.css'
 
