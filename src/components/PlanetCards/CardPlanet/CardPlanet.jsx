@@ -22,7 +22,7 @@ const CardPlanet = ({ climate, name, population, url }) => {
                 <ListGroupItem variant={'dark'}>Climate: {climate}</ListGroupItem>
                 <ListGroupItem variant={'dark'}>Population: {population === 'unknown' ? '0' : population} residents</ListGroupItem>
             </ListGroup>
-            <Card.Body>
+            <Card.Body className={style.details}>
                 <Link to={`/planet/${newUrl[5]}`}>Details</Link>
             </Card.Body>
         </Card>

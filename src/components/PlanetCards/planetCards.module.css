@@ -26,3 +26,28 @@
 .title {
     text-align: center;
 }
+
+.details {
+    width: 100%;
+    text-align: center;
+}
+
+.details > a {
+    font-size: 16px;
+    color: #eeeeee;
+    font-weight: 700;
+    background-color: #222;
+    padding: 10px 70px;
+    transition: 1s;
+    border: 1px solid #222;
+}
+
+.details > a:hover {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #343a40;
+    border: 1px solid #eee;
+    padding: 10px 70px;
+    transition: 1s;
+}
