@@ -1,0 +1,15 @@
+.errorMain {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 84px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #222222;
+    color: yellow;
+}
+
+.errorMain > p {
+    transform: rotate(-25deg);
+}
