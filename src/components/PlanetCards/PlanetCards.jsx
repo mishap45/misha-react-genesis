@@ -7,7 +7,7 @@ import Paginator_Container from './Paginator/Paginator_Container'
 
 import 'bootstrap/dist/css/bootstrap.css'
 
-const PlanetCards = ({ planets, count, currentPage, setCurrentPage }) => {
+const PlanetCards = ({ planets, count }) => {
 
     let cardsPlanets = planets.map( p => <CardPlanet key={p.name} name={p.name} url={p.url}
                                                      climate={p.climate} population={p.population} /> );
@@ -17,13 +17,13 @@ const PlanetCards = ({ planets, count, currentPage, setCurrentPage }) => {
             <Container>
                 <Row><p className={style.headPlanetCards}>Star Wars Planets Encyclopedia</p></Row>
 
-                <Row> <Paginator_Container currentPage={currentPage} setCurrentPage={setCurrentPage} count={count} /> </Row>
+                <Row> <Paginator_Container count={count} /> </Row>
 
                 <Row>
                     {cardsPlanets}
                 </Row>
 
-                <Row> <Paginator_Container currentPage={currentPage} setCurrentPage={setCurrentPage} count={count} /> </Row>
+                <Row> <Paginator_Container count={count} /> </Row>
 
             </Container>
         </div>

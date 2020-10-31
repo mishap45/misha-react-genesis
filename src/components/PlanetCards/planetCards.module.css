@@ -50,6 +50,7 @@
     border: 1px solid #eee;
     padding: 10px 70px;
     transition: 1s;
+    color: #eeeeee;
 }
 
 .paginator {
@@ -65,7 +66,7 @@
     font-weight: 600;
 }
 
-.paginator > span {
+.page {
     margin-left: 15px;
     margin-right: 15px;
     cursor: pointer;
@@ -73,10 +74,13 @@
     padding: 5px 15px;
     border-radius: 50px;
     font-size: 20px;
+    color: #eeeeee;
 }
 
-.paginator > span:hover {
+.page:hover {
     border: 1px solid yellow;
+    text-decoration: none;
+    color: #eeeeee;
 }
 
 .active {

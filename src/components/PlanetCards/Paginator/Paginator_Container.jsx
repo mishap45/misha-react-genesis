@@ -1,15 +1,24 @@
 import React from 'react'
 import Paginator from './Paginator'
+import {compose} from 'redux'
+import {Redirect, withRouter} from 'react-router-dom'
 
-const Paginator_Container = ({ count, currentPage, setCurrentPage }) => {
+const Paginator_Container = ( props ) => {
 
-    let pageCount = Math.ceil(count / 10);
+    let idPage = props.match.params.idPage;
+    let pageCount = Math.ceil(props.count / 10);
     let pages = [];
     for(let i = 1; i <= pageCount; i++) {
         pages.push(i)
     }
 
-    return <Paginator pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+    if (idPage > pageCount) {
+        return <Redirect to={'/page/1'} />
+    }
+
+    return <Paginator pages={pages} />
 };
 
-export default Paginator_Container
+export default compose(
+    withRouter
+)(Paginator_Container)

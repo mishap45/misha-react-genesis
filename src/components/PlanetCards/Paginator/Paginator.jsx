@@ -1,15 +1,22 @@
 import React from 'react'
 import style from '../planetCards.module.css'
+import {compose} from 'redux'
+import {withRouter, NavLink} from 'react-router-dom'
 
-const Paginator = ({ pages, currentPage, setCurrentPage }) => {
+const Paginator = (props) => {
+
+    let idPage = props.match.params.idPage;
 
     return (
         <div className={style.paginator}>
             {
-                pages.map(p => <span onClick={() => {setCurrentPage(p)}} className={currentPage === p && style.active}>{p}</span>)
+                props.pages.map(p => <NavLink key={p} to={`/page/${p}`} activeClassName={style.active}
+                                              className={style.page}>{p}</NavLink>)
             }
         </div>
     )
 };
 
-export default Paginator
+export default compose(
+    withRouter
+)(Paginator)

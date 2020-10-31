@@ -1,22 +1,26 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import PlanetCards from './PlanetCards'
 import axios from 'axios'
+import { compose } from 'redux'
+import { withRouter } from 'react-router-dom'
 
-const PlanetCards_Container = () => {
+const PlanetCards_Container = ( props ) => {
 
+    let idPage = props.match.params.idPage;
     const [planets, setPlanets] = useState([]);
     const [count, setCount] = useState(0);
-    let [currentPage, setCurrentPage] = useState(1);
 
     useEffect(async () => {
-        const res = await axios.get(`https://swapi.dev/api/planets/?page=${currentPage}`);
+        const res = await axios.get(`https://swapi.dev/api/planets/?page=${idPage}`);
         const data = await res.data.results;
         const coutPage = await res.data.count;
         setPlanets(data);
         setCount(coutPage)
-    }, [planets]);
+    }, [planets, idPage]);
 
-    return <PlanetCards currentPage={currentPage} setCurrentPage={setCurrentPage} count={count} planets={planets} />
+    return <PlanetCards count={count} planets={planets} />
 };
 
-export default PlanetCards_Container
+export default compose(
+    withRouter
+)(PlanetCards_Container)

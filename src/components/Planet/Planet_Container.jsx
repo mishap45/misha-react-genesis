@@ -4,7 +4,7 @@ import { compose } from 'redux'
 import { withRouter } from 'react-router-dom'
 import axios from 'axios'
 
-const Planet_Container = (props) => {
+const Planet_Container = ( props ) => {
 
     let idPlanet = props.match.params.id;
     let [planet, setPlanet] = useState([]);
