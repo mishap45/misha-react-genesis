@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Paginator from './Paginator'
 
 const Paginator_Container = ({ count, currentPage, setCurrentPage }) => {
