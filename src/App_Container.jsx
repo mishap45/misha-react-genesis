@@ -1,12 +1,12 @@
 import React from 'react'
 import App from './App'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 const App_Container = () => {
     return (
-        <BrowserRouter>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <App />
-        </BrowserRouter>
+        </HashRouter>
     )
 };
 
