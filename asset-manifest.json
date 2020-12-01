@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/misha-react-genesis/static/css/main.54da96bd.chunk.css",
+    "main.js": "/misha-react-genesis/static/js/main.d4991a26.chunk.js",
+    "main.js.map": "/misha-react-genesis/static/js/main.d4991a26.chunk.js.map",
+    "runtime-main.js": "/misha-react-genesis/static/js/runtime-main.3d141303.js",
+    "runtime-main.js.map": "/misha-react-genesis/static/js/runtime-main.3d141303.js.map",
+    "static/css/2.95f25948.chunk.css": "/misha-react-genesis/static/css/2.95f25948.chunk.css",
+    "static/js/2.0ba3fe40.chunk.js": "/misha-react-genesis/static/js/2.0ba3fe40.chunk.js",
+    "static/js/2.0ba3fe40.chunk.js.map": "/misha-react-genesis/static/js/2.0ba3fe40.chunk.js.map",
+    "static/js/3.cb45398d.chunk.js": "/misha-react-genesis/static/js/3.cb45398d.chunk.js",
+    "static/js/3.cb45398d.chunk.js.map": "/misha-react-genesis/static/js/3.cb45398d.chunk.js.map",
+    "index.html": "/misha-react-genesis/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/misha-react-genesis/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.54da96bd.chunk.css.map": "/misha-react-genesis/static/css/main.54da96bd.chunk.css.map",
+    "static/js/2.0ba3fe40.chunk.js.LICENSE.txt": "/misha-react-genesis/static/js/2.0ba3fe40.chunk.js.LICENSE.txt",
+    "static/media/star-wars-logo-wallpaper.3ba8fe73.jpg": "/misha-react-genesis/static/media/star-wars-logo-wallpaper.3ba8fe73.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d141303.js",
+    "static/css/2.95f25948.chunk.css",
+    "static/js/2.0ba3fe40.chunk.js",
+    "static/css/main.54da96bd.chunk.css",
+    "static/js/main.d4991a26.chunk.js"
+  ]
+}
