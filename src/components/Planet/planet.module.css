@@ -1,58 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
 .planetPage {
-    background-color: #111111;
+    background-image: url('../../assets/img/bcStars.png');
 }
 
-.backArrow {
-    width: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.planetNameBlock {
+.back {
+    width: 100%;
     display: flex;
-    align-items: center;
-    color: #eeeeee;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 32px;
 }
 
-.planetNameBlock > p {
-    margin-left: 20px;
+.back > a > img {
+    transform: rotate(180deg);
 }
 
-.separator {
-    width: 100%;
-    height: 5px;
-    background-color: #eee;
-    border-radius: 50px;
-}
-
-.parameter {
-    color: #eeeeee;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.residents {
-    width: 100%;
-    text-align: center;
-    font-size: 23px;
-    font-weight: 600;
-    color: #eeeeee;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.missing {
+.back > a > span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
     font-size: 16px;
-    color: #eeeeee;
-    margin-bottom: 50px;
+    color: #fff;
+    text-decoration: none;
 }
 
-.table {
-    margin-bottom: 50px;
+.back > a > span:hover {
+    color: #FFE81F;
+    text-decoration: none;
+}
+
+.back > a:hover {
+    text-decoration: none;
+}
+
+.name {
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 56px;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    word-break: break-word;
+    color: #fff;
+    width: 544px;
 }

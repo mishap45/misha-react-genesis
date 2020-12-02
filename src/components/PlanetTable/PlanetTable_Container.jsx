@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import PlanetCards from './PlanetCards'
+import PlanetTable from './PlanetTable'
 import axios from 'axios'
 import { compose } from 'redux'
 import { withRouter } from 'react-router-dom'
 
-const PlanetCards_Container = ( props ) => {
+const PlanetTable_Container = (props ) => {
 
     let idPage = props.match.params.idPage;
     const [planets, setPlanets] = useState([]);
@@ -18,9 +18,9 @@ const PlanetCards_Container = ( props ) => {
         setCount(coutPage)
     }, [planets, idPage]);
 
-    return <PlanetCards count={count} planets={planets} />
+    return <PlanetTable count={count} planets={planets} />
 };
 
 export default compose(
     withRouter
-)(PlanetCards_Container)
+)(PlanetTable_Container)

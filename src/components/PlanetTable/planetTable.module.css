@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+.planetContainer {
+    background-image: url("../../assets/img/bcStars.png");
+    padding: 64px 80px 0 80px;
+}
+
+.paginator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #eeeeee;
+    margin-top: 64px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.page {
+    padding: 16px;
+    cursor: pointer;
+    border: 1px solid #eeeeee;
+    color: #eeeeee;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.page:hover {
+    background-color: #eee;
+    text-decoration: none;
+    color: #000;
+}
+
+.active {
+    padding: 16px;
+    cursor: pointer;
+    border: 1px solid #eeeeee;
+    color: #000;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.Thead {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.Thead > th {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.mainData {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.mainData > td {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 110px;
+    word-break: break-word;
+}
+
+.link > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link > a:hover {
+    color: #FFE81F;
+    text-decoration: none;
+}

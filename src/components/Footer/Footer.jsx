@@ -4,7 +4,7 @@ import style from './footer.module.css'
 const Footer = () => {
     return (
         <div className={style.footerContainer}>
-            <p className={style.footerText}>Star Wars Planets Encyclopedia, 2020, by misha-react</p>
+            <p className={style.footerText}>By Misha Pavlov</p>
         </div>
     )
 };

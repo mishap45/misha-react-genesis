@@ -1,76 +1,89 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './planet.module.css'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
-import planetIcon from '../../assets/icons/planet-100.png'
-import leftArrow from '../../assets/icons/left-arrow-100.png'
-import Col from 'react-bootstrap/Col'
-import PlanetParameter from './PlanetParameter/PlanetParameter'
-import Table from 'react-bootstrap/Table'
-
-import {Link} from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import Residents_Container from './Residents/Residents_Container'
+import arrow from '../../assets/icons/arrow.svg'
+import Planet1 from '../../assets/img/Planet/Planet.png'
+import Planet2 from '../../assets/img/Planet/Planet2.PNG'
+import Planet3 from '../../assets/img/Planet/Planet3.jpg'
+import Planet1_1 from '../../assets/img/Planet/Planet1_1.png'
+import Planet2_2 from '../../assets/img/Planet/Planet2_2.jpg'
+import Planet3_3 from '../../assets/img/Planet/Planet3_3.jpg'
+import People1 from '../../assets/img/Planet/PeoplePlanet.png'
+import People2 from '../../assets/img/Planet/People2.JPG'
+import People3 from '../../assets/img/Planet/People3.jpg'
+import PhotoBlock from './PhotoBlock/PhotoBlock'
+import TextBlock from './TextBlock/TextBlock'
 
-const Planet = ({ planet, missing }) => {
+const getRandomArbitrary = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
+};
+
+const Planet = ({planet}) => {
+
+    const [random, setRandom] = useState(getRandomArbitrary(1, 3));
+
     return (
         <div className={style.planetPage}>
             <Container>
                 <Row>
-                    <Link to={'/'}><img src={leftArrow} className={style.backArrow} alt="back arrow"/></Link>
-                </Row>
-
-                <Row className={style.planetNameBlock}>
-                    <img src={planetIcon} alt="planet icon"/>
-                    <p>{planet.name}</p>
-                </Row>
-
-                <Row>
-                    <div className={style.separator}> </div>
+                    <div className={style.back}>
+                        <Link to={'/'}>
+                            <img src={arrow} alt="arrow"/><span> All planets</span>
+                        </Link>
+                    </div>
                 </Row>
 
                 <Row>
-                    <Col>
-                        <PlanetParameter parameterText={'Rotation_period'} parameterValue={planet.rotation_period}/>
-                        <PlanetParameter parameterText={'Diameter'} parameterValue={planet.diameter}/>
-                        <PlanetParameter parameterText={'Climate'} parameterValue={planet.climate}/>
-                    </Col>
-
-                    <Col>
-                        <PlanetParameter parameterText={'Gravity'} parameterValue={planet.gravity}/>
-                        <PlanetParameter parameterText={'Terrain'} parameterValue={planet.terrain}/>
-                        <PlanetParameter parameterText={'Population'} parameterValue={
-                            planet.population === 'unknown' ? '0' : planet.population
-                        }/>
-                    </Col>
+                    <span className={style.name}>{planet.name}</span>
                 </Row>
+
+                <PhotoBlock planet={random === 1
+                    ? Planet1
+                    : random === 2
+                        ? Planet2
+                        : Planet3}/>
+                <TextBlock
+                    text={'The cities of Tatooine were frequently blasted by sandstorms and the ' +
+                    'inhabitants always seemed to know when one was coming. Not much distinguished ' +
+                    'the towns as the poor standard of living was common. The cities were separated ' +
+                    'from each other by large expanses of deserts. Rural life, on the other hand, was ' +
+                    'mostly small moisture farms that sold water and food for a meager living.[11]'}/>
+
+                <PhotoBlock planet={random === 1
+                    ? Planet1_1
+                    : random === 2
+                        ? Planet2_2
+                        : Planet3_3}/>
+                <TextBlock
+                    text={'Inhabiting the planet were many native species, the largest of which were ' +
+                    'the carnivorous krayt dragons. The common krayt dragon, while more plentiful, was ' +
+                    'shadowed by the greater krayt dragon, which submerged itself under the shifting sands ' +
+                    'and used its powerful limbs to swim through the dunes. In addition, the common bantha ' +
+                    'and eopie species also found a home on the world, along with dewbacks, rontos, womp ' +
+                    'rats, massiffs and scurriers.[1][2]'}/>
+
+                <PhotoBlock planet={random === 1
+                    ? People1
+                    : random === 2
+                        ? People2
+                        : People3}/>
+                <TextBlock
+                    text={'The cities of Tatooine were frequently blasted by sandstorms and the inhabitants ' +
+                    'always seemed to know when one was coming. Not much distinguished the towns as the poor ' +
+                    'standard of living was common. The cities were separated from each other by large expanses ' +
+                    'of deserts. Rural life, on the other hand, was mostly small moisture farms that sold water ' +
+                    'and food for a meager living.[11]'}/>
 
                 <Row>
-                    <div className={style.separator}> </div>
+                    <div className={style.back}>
+                        <Link to={'/'}>
+                            <img src={arrow} alt="arrow"/><span> All planets</span>
+                        </Link>
+                    </div>
                 </Row>
-
-                <Row>
-                    <p className={style.residents}>Residents</p>
-                </Row>
-
-                <Row>
-                    {
-                        missing
-                            ? <div className={style.missing}>Residents are missing</div>
-                            : <Table className={style.table} striped bordered hover variant="dark">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                    </tr>
-                                </thead>
-                                    <tbody>
-                                        <Residents_Container residents={planet.residents}/>
-                                    </tbody>
-                            </Table>
-                    }
-                </Row>
-
             </Container>
         </div>
     )

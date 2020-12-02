@@ -8,16 +8,14 @@ const Planet_Container = ( props ) => {
 
     let idPlanet = props.match.params.id;
     let [planet, setPlanet] = useState([]);
-    let [missing, setMissing] = useState(false);
 
     useEffect(async () => {
         const res = await axios.get(`https://swapi.dev/api/planets/` + idPlanet + `/`);
-        const data = await res.data;
-        await data.residents.length === 0 && setMissing(true);
+        const data = res.data;
         setPlanet(data)
     }, [idPlanet]);
 
-    return <Planet planet={planet} missing={missing} />
+    return <Planet planet={planet} />
 };
 
 export default compose(

@@ -1,12 +1,8 @@
 import React from 'react'
-import style from '../planetCards.module.css'
-import {compose} from 'redux'
-import {withRouter, NavLink} from 'react-router-dom'
+import style from '../planetTable.module.css'
+import { NavLink } from 'react-router-dom'
 
 const Paginator = (props) => {
-
-    let idPage = props.match.params.idPage;
-
     return (
         <div className={style.paginator}>
             {
@@ -17,6 +13,4 @@ const Paginator = (props) => {
     )
 };
 
-export default compose(
-    withRouter
-)(Paginator)
+export default Paginator

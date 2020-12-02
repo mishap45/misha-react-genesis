@@ -1,7 +1,7 @@
 import React from 'react'
 import Paginator from './Paginator'
-import {compose} from 'redux'
-import {Redirect, withRouter} from 'react-router-dom'
+import { compose } from 'redux'
+import { Redirect, withRouter } from 'react-router-dom'
 
 const Paginator_Container = ( props ) => {
 
