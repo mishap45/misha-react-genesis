@@ -10,12 +10,14 @@ const PlanetTable_Container = (props ) => {
     const [planets, setPlanets] = useState([]);
     const [count, setCount] = useState(0);
 
-    useEffect(async () => {
-        const res = await axios.get(`https://swapi.dev/api/planets/?page=${idPage}`);
-        const data = await res.data.results;
-        const coutPage = await res.data.count;
-        setPlanets(data);
-        setCount(coutPage)
+    useEffect(() => {
+        (async function getPlanet() {
+            const res = await axios.get(`https://swapi.dev/api/planets/?page=${idPage}`);
+            const data = await res.data.results;
+            const coutPage = await res.data.count;
+            setPlanets(data);
+            setCount(coutPage)
+        })()
     }, [planets, idPage]);
 
     return <PlanetTable count={count} planets={planets} />

@@ -9,10 +9,12 @@ const Planet_Container = ( props ) => {
     let idPlanet = props.match.params.id;
     let [planet, setPlanet] = useState([]);
 
-    useEffect(async () => {
-        const res = await axios.get(`https://swapi.dev/api/planets/` + idPlanet + `/`);
-        const data = res.data;
-        setPlanet(data)
+    useEffect(() => {
+        (async function getPlanet() {
+            const res = await axios.get(`https://swapi.dev/api/planets/` + idPlanet + `/`);
+            const data = res.data;
+            setPlanet(data)
+        })()
     }, [idPlanet]);
 
     return <Planet planet={planet} />

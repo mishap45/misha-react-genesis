@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import style from './planet.module.css'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
@@ -23,7 +23,7 @@ const getRandomArbitrary = (min, max) => {
 
 const Planet = ({planet}) => {
 
-    const [random, setRandom] = useState(getRandomArbitrary(1, 3));
+    const random = getRandomArbitrary(1, 3);
 
     return (
         <div className={style.planetPage}>
