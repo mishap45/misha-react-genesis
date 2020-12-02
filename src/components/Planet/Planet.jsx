@@ -23,7 +23,7 @@ const getRandomArbitrary = (min, max) => {
 
 const Planet = ({planet}) => {
 
-    const random = getRandomArbitrary(1, 3);
+    const random = getRandomArbitrary(1, 4);
 
     return (
         <div className={style.planetPage}>
