@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/misha-react-genesis/static/css/main.1bb0afd3.chunk.css",
-    "main.js": "/misha-react-genesis/static/js/main.2cbef8b8.chunk.js",
-    "main.js.map": "/misha-react-genesis/static/js/main.2cbef8b8.chunk.js.map",
+    "main.css": "/misha-react-genesis/static/css/main.484b963b.chunk.css",
+    "main.js": "/misha-react-genesis/static/js/main.c6338202.chunk.js",
+    "main.js.map": "/misha-react-genesis/static/js/main.c6338202.chunk.js.map",
     "runtime-main.js": "/misha-react-genesis/static/js/runtime-main.3a7a172d.js",
     "runtime-main.js.map": "/misha-react-genesis/static/js/runtime-main.3a7a172d.js.map",
     "static/css/2.95f25948.chunk.css": "/misha-react-genesis/static/css/2.95f25948.chunk.css",
@@ -12,16 +12,17 @@
     "static/js/3.af659cc0.chunk.js.map": "/misha-react-genesis/static/js/3.af659cc0.chunk.js.map",
     "index.html": "/misha-react-genesis/index.html",
     "static/css/2.95f25948.chunk.css.map": "/misha-react-genesis/static/css/2.95f25948.chunk.css.map",
-    "static/css/main.1bb0afd3.chunk.css.map": "/misha-react-genesis/static/css/main.1bb0afd3.chunk.css.map",
+    "static/css/main.484b963b.chunk.css.map": "/misha-react-genesis/static/css/main.484b963b.chunk.css.map",
     "static/js/2.f11577f2.chunk.js.LICENSE.txt": "/misha-react-genesis/static/js/2.f11577f2.chunk.js.LICENSE.txt",
-    "static/media/People2.9dfaef2c.JPG": "/misha-react-genesis/static/media/People2.9dfaef2c.JPG",
-    "static/media/People3.37325c29.jpg": "/misha-react-genesis/static/media/People3.37325c29.jpg",
+    "static/media/People2.0b41f4f9.jpg": "/misha-react-genesis/static/media/People2.0b41f4f9.jpg",
+    "static/media/People3.64ddd69e.jpg": "/misha-react-genesis/static/media/People3.64ddd69e.jpg",
     "static/media/PeoplePlanet.0ecfd126.png": "/misha-react-genesis/static/media/PeoplePlanet.0ecfd126.png",
     "static/media/Planet.b74c1d8a.png": "/misha-react-genesis/static/media/Planet.b74c1d8a.png",
     "static/media/Planet1_1.28434fc2.png": "/misha-react-genesis/static/media/Planet1_1.28434fc2.png",
-    "static/media/Planet2.f5d56a94.PNG": "/misha-react-genesis/static/media/Planet2.f5d56a94.PNG",
-    "static/media/Planet2_2.e1d15dd5.jpg": "/misha-react-genesis/static/media/Planet2_2.e1d15dd5.jpg",
-    "static/media/Planet3_3.eb9c28d9.jpg": "/misha-react-genesis/static/media/Planet3_3.eb9c28d9.jpg",
+    "static/media/Planet2.06c26e86.jpg": "/misha-react-genesis/static/media/Planet2.06c26e86.jpg",
+    "static/media/Planet2_2.4760ac76.jpg": "/misha-react-genesis/static/media/Planet2_2.4760ac76.jpg",
+    "static/media/Planet3.ca3c3f0c.jpg": "/misha-react-genesis/static/media/Planet3.ca3c3f0c.jpg",
+    "static/media/Planet3_3.3b2b0bda.png": "/misha-react-genesis/static/media/Planet3_3.3b2b0bda.png",
     "static/media/arrow.6d67a579.svg": "/misha-react-genesis/static/media/arrow.6d67a579.svg",
     "static/media/App.css": "/misha-react-genesis/static/media/bcStars.0bf5dea9.png"
   },
@@ -29,7 +30,7 @@
     "static/js/runtime-main.3a7a172d.js",
     "static/css/2.95f25948.chunk.css",
     "static/js/2.f11577f2.chunk.js",
-    "static/css/main.1bb0afd3.chunk.css",
-    "static/js/main.2cbef8b8.chunk.js"
+    "static/css/main.484b963b.chunk.css",
+    "static/js/main.c6338202.chunk.js"
   ]
 }
