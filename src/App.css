@@ -1,4 +1,17 @@
 .bc {
     background-image: url("./assets/img/bcStars.png");
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.mainWrapper {
+    flex: 1 0 auto
+}
+
+.footerWrapper {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
 }

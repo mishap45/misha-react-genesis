@@ -11,13 +11,19 @@ const App = () => {
   return (
     <div className='bc'>
       <Header/>
-      <Switch>
-          <Route exact path='/page/:idPage?' component={PlanetTable_Container}/>
-          <Route exact path='/planet/:id?' component={Planet_Container}/>
-          <Route exact path='/' render={() => <Redirect to={'/page/1'} />}/>
-          <Route path='*' component={ErrorPage}/>
-      </Switch>
-      <Footer/>
+
+      <div className='mainWrapper'>
+          <Switch>
+              <Route exact path='/page/:idPage?' component={PlanetTable_Container}/>
+              <Route exact path='/planet/:id?' component={Planet_Container}/>
+              <Route exact path='/' render={() => <Redirect to={'/page/1'} />}/>
+              <Route path='*' component={ErrorPage}/>
+          </Switch>
+      </div>
+
+      <div className='footerWrapper'>
+          <Footer/>
+      </div>
     </div>
   );
 };

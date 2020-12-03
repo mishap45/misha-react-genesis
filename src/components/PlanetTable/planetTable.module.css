@@ -51,11 +51,18 @@
 }
 
 .Thead > th {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 8px 25px 8px;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
     font-size: 16px;
+}
+
+.Thead > th:first-child {
+    padding: 25px 8px 25px 0;
+}
+
+.Thead > th:last-child {
+    padding: 25px 0 25px 8px;
 }
 
 .mainData {
@@ -67,10 +74,21 @@
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 400;
     font-size: 14px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 8px 24px 8px;
     width: 110px;
     word-break: break-word;
+}
+
+.mainData > td:first-child {
+    padding: 24px 8px 24px 0;
+}
+
+.mainData > td:last-child {
+    padding: 24px 0 24px 8px;
+}
+
+.link {
+    text-align: right;
 }
 
 .link > a {
